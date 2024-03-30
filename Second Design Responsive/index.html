@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f395046c99.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list" class="menu-toggle ">
+                <span><i class="fa-solid fa-bars open "></i></span>
+                <span><i class="fa-solid fa-xmark close"></i></span>
+                Menu
+            </button>
+            <ul>
+                <li><a href="">TACOS</a></li>
+                <li><a href="">BEERS</a></li>
+                <li><a href="">WINES</a></li>
+                <li><a href="">DESERTS</a></li>
+                <li><a href="">RESERVATIONS</a></li>
+            </ul>
+        </nav>
+        <!-- front view  -->
+        <div class="row">
+            <div class="left-col">
+                <div class="left-col-text">
+                    <h3>Terry's Taco Joint</h3>
+                    <p>Pretty Good Tacos!</p>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="right-col-row">
+                    <p class="price">$1.99 </p>
+                    <p>Tacos</p>
+                </div>
+                <div class="right-col-row">
+                    <p class="price">$3.99 </p>
+                    <p>Kombucha</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- for items  -->
+        <section class="items">
+            <div class="items-list">
+                <div class="items-list-icon">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+                <h3>Tacos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eveniet hic, labore corrupti deserunt
+                    architecto tis.</p>
+            </div>
+
+            <div class="items-list">
+                <div class="items-list-icon">
+                    <i class="fa-solid fa-wine-bottle"></i>
+                </div>
+                <h3>Beer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eveniet hic, labore corrupti deserunt
+                    architecto tis.</p>
+            </div>
+            <div class="items-list">
+                <div class="items-list-icon">
+                    <i class="fa-solid fa-wine-glass"></i>
+                </div>
+                <h3>Wine</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eveniet hic, labore corrupti deserunt
+                    architecto tis.</p>
+            </div>
+            <div class="items-list">
+                <div class="items-list-icon">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <h3>Music</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eveniet hic, labore corrupti deserunt
+                    architecto tis.</p>
+            </div>
+        </section>
+        <!-- for features  -->
+        <section class="features">
+            <img class="features-img" src="./images/features-removebg-preview.png" alt="">
+            <div class="features-content">
+                <h2>Featured Taco</h2>
+                <p>Slim Profile, easy to hold and loaded with cheese.</p>
+                <p>This is the one you have been waiting for</p>
+                <button class="btn">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+        <!-- Instant Grams  -->
+        <section class="last">
+            <div class="last-box">
+                <div class="line-left"></div>
+                <h2>Instant Grams</h2>
+                <div class="line-right"></div>
+            </div>
+
+            <div class="last-img last-img1">
+                
+            </div>
+            <div class="last-img last-img3">
+            
+            </div>
+            <div class="last-img last-img4">
+            
+            </div>
+            <div class="last-img last-img2">
+               
+            </div>
+            <div class="last-img last-img3">
+                
+            </div>
+            <div class="last-img last-img1">
+            
+            </div>
+            <div class="last-img last-img4">
+          
+            </div>
+            <div class="last-img last-img2">
+               
+            </div>
+            <div class="last-img last-img3">
+                
+            </div>
+            <div class="last-img last-img1">
+            
+            </div>
+            <div class="last-img last-img4">
+          
+            </div>
+           
+
+            <!-- <div class="lastdiv">
+                
+            </div> -->
+        </section>
+    </div>
+
+
+    <!-- to toggle the menu  -->
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        function toggleNav({
+            target
+        }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
+    </script>
+
+</body>
+
+</html>
