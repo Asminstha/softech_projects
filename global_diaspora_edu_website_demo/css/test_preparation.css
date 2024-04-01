@@ -1,0 +1,354 @@
+.ielts-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: blueviolet; */
+    position: relative;
+    gap: 10px;
+}
+.inner-banner-menu{
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    position: absolute;
+    left: 50px;
+    color: #fe0000;
+    font-size: 1.5rem;
+}
+.inner-banner-menu a{
+    text-decoration: none;
+    color: #fe0000;
+    text-transform: capitalize;
+}
+
+#ielts {
+    padding-left: 50px;
+    /* height: 100vh; */
+    /* margin-bottom: 400px; */
+}
+
+.first-col {
+    /* background-color: aquamarine; */
+    flex-basis: 70%;
+    position: relative;
+}
+
+.first-col::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    /* background-color: #0f2caa; */
+    /* background-image: url(./Images/bg/sky.png); */
+    background-image: url(./Images/bg/bggg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.first-col-row1 {
+    padding: 10px;
+    text-align: justify;
+    z-index: 12222;
+}
+
+.first-col-row1-data {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 10px;
+}
+
+.first-col-row1-data-img {
+    flex-basis: 40%;
+    /* background-color: aqua; */
+}
+
+.first-col-row1-data-img img {
+    width: 100%;
+    height: 400px;
+    /* Clipping img into polygon shape*/
+        clip-path: polygon(50% 0%, 100% 38%,
+                82% 100%, 18% 100%, 0% 38%);
+    
+        /* Setting animation for 3s in 
+                        an infinite loop */
+        /* animation: clipPath 3s infinite; */
+}
+
+.first-col-row1-data-text {
+    flex-basis: 60%;
+}
+
+
+.first-col-row2 {
+    /* padding: 10px; */
+    /* background-color: violet; */
+    width: 100%;
+    position: relative;
+
+
+}
+
+.fix {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 5px;
+    border-left: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: center;
+    /* margin: 0px; */
+    width: 100%;
+    /* background-color: pink; */
+
+}
+
+.tab-links {
+    /* margin-right: 30px; */
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    /* color: #fe0000; */
+    color: #0f2caa;
+    position: relative;
+    transition: 0.5s ease-in-out;
+
+}
+
+.tab-links:hover {
+
+    color: #fe0000;
+}
+
+.ielts-box {
+    padding: 10px;
+    /* background-color: yellow; */
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #fe0000;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents {
+    text-align: justify;
+    display: none;
+    /*To hide all the contents in tab-contents*/
+    /* margin: 10px; */
+}
+
+.tab-contents.active-tab {
+    /*To only show the active-tab items*/
+    display: block;
+}
+
+.second-col {
+    /* background-color:rgb(111, 102, 102,0.08); */
+    background-image: url(./Images/bg/overlay.svg), linear-gradient(45deg, #fe0000 10%, #eff3f9 10%);
+    background-size: cover;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 10px;
+    /* background-image: linear-gradient(to right, #fe0000,#0f2caa); */
+
+}
+
+/* .second-col::before{
+    content: '';
+    background-image: url(./Images/bg/water_drop-removebg-preview.png);
+        background-color: #0f2caa;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        opacity: 0.1;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    z-index: -1;
+} */
+
+.test-items {
+display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    margin: 10px;
+    margin-left: 0px;
+
+}
+
+.country-items {
+    display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        margin: 10px;
+        margin-left: 0px;
+}
+ul {
+    padding-left: 5px;
+}
+.second-col ul li {
+list-style: none;
+    margin-top: 20px;
+    display: flex;
+    font-size: 0.8rem;
+    /* text-align: left; */
+    font-weight: bold;
+
+}
+
+.test-items ul li a {
+text-decoration: none;
+    border: 1px solid #fe0000;
+    border-left: 5px solid #0f2caa;
+    padding: 10px;
+    /* padding-right: 50px; */
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    transition: 0.5s ease-in;
+    box-shadow: 2px 5px #fe0000;
+
+}
+.second-col-row1{
+        width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+}
+
+.second-col-row1 ul li a {
+text-decoration: none;
+    border: 1px solid #fe0000;
+    border-left: 5px solid #0f2caa;
+    padding: 10px;
+    /* padding-right: 50px; */
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    transition: 0.5s ease-in;
+    box-shadow: 2px 5px #fe0000;
+}
+
+.second-col-row1 ul li a:hover,
+.test-items ul li a:hover {
+    background-color: #fe0000;
+        box-shadow: 2px 5px #0f2caa;
+        color: #fff;
+        border: none;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .tab-links {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    .second-col ul li {
+        font-size: 0.8rem;
+    }
+
+    .test-items ul li a,
+    .second-col-row1 ul li a {
+        width: 100%;
+    }
+.second-col{
+    margin-bottom: auto;
+}
+    .first-col-row1-data {
+        flex-wrap: wrap;
+    }
+
+    .first-col-row1-data-img {
+        flex-basis: 100%;
+    }
+
+    .first-col-row1-data-text {
+        flex-basis: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .first-col {
+        flex-basis: 100%;
+    }
+
+    .second-col {
+        flex-basis: 100%;
+        /* margin-top: 720px; */
+    }
+
+    #ielts {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .tab-links {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.2rem
+    }
+
+}
+
+/* polygon clip animation  */
+@keyframes clipPath {
+    0% {
+        /* clip-path property initially */
+        clip-path: polygon(50% 0%, 100% 38%,
+                82% 100%, 18% 100%, 0% 38%);
+    }
+
+    50% {
+        /* clip-path property at 50% */
+        clip-path: polygon(50% 50%, 90% 88%,
+                80% 10%, 20% 10%, 8% 90%);
+    }
+
+    100% {
+        /* clip-path property finally */
+        clip-path: polygon(50% 0%, 100% 38%,
+                82% 100%, 18% 100%, 0% 38%);
+    }
+}

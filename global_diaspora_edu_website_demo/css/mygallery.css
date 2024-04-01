@@ -1,0 +1,35 @@
+.Gallery {
+    margin-top: 50px;
+}
+
+.gallery-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-menu ul li {
+font-weight: bold;
+margin: 8px;
+    list-style: none;
+    padding: 8px;
+    width: 100px;
+   transition: 0.5s ease-in-out;
+}
+
+.gallery-menu ul li.active {
+    background-color: #0f2caa;
+    color: #fff;
+}
+
+.gallery-menu ul li:hover {
+    background-color: #fe0000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Gallery .item img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}

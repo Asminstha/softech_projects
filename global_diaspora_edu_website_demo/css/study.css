@@ -1,0 +1,317 @@
+.australia-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* background-color: aqua; */
+    position: relative;
+    /* background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f3f6f6 50px),
+            repeating-linear-gradient(rgb(15, 44, 170 ,0.2),rgb(254, 0, 0 ,0.2)); */
+}
+.first-col{
+    flex-basis: 20%;
+    display: flex;
+        background-image: url(../Images/bg/overlay.svg), linear-gradient(45deg, #fe0000 20%, #eff3f9 10%);
+    flex-direction: column;
+    margin-top: 10px;
+    
+    /* gap: 5px; */
+
+}
+
+/* 
+
+for background opacity 
+background-color: #f3f6f6;
+opacity: 0.3;
+background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f3f6f6 50px),
+repeating-linear-gradient(#56d1b355, #56d1b3);
+opacity: 1;
+display: grid;
+place-items: center; */
+
+
+.first-col ul li {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    
+    font-size: 0.8rem;
+    /* text-align: left; */
+    font-weight: bold;
+
+}
+ul{
+    padding-left: 5px;
+}
+.first-col-row1{
+    /* background-color: rgb(226, 226, 235); */
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.first-col-row1 ul li a ,.test-items ul li a {
+    text-decoration: none;
+    border: 1px solid #fe0000;
+    border-left: 5px solid #0f2caa;
+    padding: 10px;
+    /* padding-right: 50px; */
+    width: 100%;
+font-size: 1rem;
+    color: black;
+    transition: 0.5s ease-in;
+    box-shadow: 2px 5px #fe0000;
+}
+
+.first-col-row1 ul li a:hover,
+.test-items ul li a:hover {
+    /* background-color: #0f2caa; */
+    background-color: #fe0000;
+    box-shadow: 2px 5px #0f2caa;
+    /* color: #0f2caa; */
+    color: #fff;
+    /* border-radius: 50%; */
+    border: none;
+}
+
+.test-items ,.country-items {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    margin: 10px;
+    margin-left: 0px;
+
+}
+
+
+
+.second-col{
+    flex-basis: 75%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+
+}
+.first-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+position: relative;
+
+}
+
+.first-box::before{
+content: '';
+background-color: black;
+background-image: url(../Images/Assets/full-shot-woman-travel-concept_23-2149153259.avif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;
+    position: absolute;
+    opacity: 0.4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+}
+.country-image{
+    flex-basis: 40%;
+    /* padding: 50px; */
+    margin-top: 120px;
+    position: relative;
+    height: 400px;
+    
+
+}
+.country-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.country-text{
+    flex-basis: 60%;
+    margin-top: 5px;
+    position: relative;
+
+}
+.first-box p, .second-box p{
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 5px;
+}
+
+.second-box{
+    display: flex;
+    flex-direction: row;
+    
+}
+ .country-reason{
+    flex-basis: 50%;
+ }
+ .reason-list{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    /* border: 2px solid; */
+    
+ }
+ .reason-list ul li:hover{
+    background-color: #f5f5f8;
+    color:#0f2caa;    
+ }
+ .reason-list ul li{
+    list-style:none;
+    margin: 15px;
+    border: 2px solid;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #fe0000;
+ }
+
+.reason-list i{
+    color: #0f2caa;
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
+
+}
+.reason-list i:hover{
+    color: #fe0000;
+}
+
+
+ /* faq section  */
+.faq-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 5px;
+}
+.faq-banner{
+    flex-basis: 40%;
+    height: 320px;
+  margin: auto;
+overflow: hidden;
+background-color: #0f2caa;
+/* border: 1px solid #333; */
+box-shadow: inset 20px   15px 99px red;
+
+}
+.faq-banner-img{
+    /* background-color: yellow; */
+   height: 320px;
+   width: 500px;
+}
+.faq-banner-img img{
+/* width: 70%; */
+    /* margin-left: 50px; */
+    width: 100%;
+    height: 100%;
+        transition: 0.3s ease-out;
+}
+.faq-banner-img img:hover{
+    transform: translatex(5%);
+        filter: drop-shadow(0rem 1.5rem #FE0000);
+        filter: drop-shadow(0rem 2.5rem rgb(15, 44, 170,0.5));
+}
+.faq {
+    flex-basis: 60%;
+    /* background: #f34949; */
+    color: #333;
+    /* margin: 15rem auto; */
+    /* width: 90%; */
+    /* max-width: 50rem; */
+    /* min-height: 30rem; */
+    border-radius: 40px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fe0000;
+    font-weight: bold;
+}
+
+.faq-container {
+    /* padding: 4rem 2rem; */
+    padding: 5px;
+}
+
+.faq-btn {
+    width: 100%;
+    padding: 1.6rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-weight: BOLD;
+    color: #0f2caa;
+    transition: all 0.5s ease-in;
+    
+}
+
+.faq-btn:after {
+    content: "\27A4";
+    color:#fe0000;
+    float: right;
+    transition: all 0.5s ease-iN;
+}
+
+.faq-btn.is-open:after {
+    transform: rotate(90deg);
+}
+
+.faq-btn:hover,
+.faq-btn.is-open {
+    color: #fe0000;
+    font-weight: bold;
+}
+
+.faq-content {
+    max-height: 0;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1rem;
+    margin: 0 2rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    text-align: justify;
+    transition: max-height 0.3s ease-in-out;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* small screen  */
+@media only screen and (max-width: 1200px){
+    
+.australia-row{
+    flex-direction: column-reverse;
+}
+.first-col{
+    /* flex-direction: row; */
+    margin: auto;
+}
+}
+@media only screen and (max-width:1000px){
+    .first-box{
+        flex-direction: column;
+    }
+    .faq-row{
+        flex-direction: column;
+    }
+        .faq-banner-img{
+            width: 100%;
+        }
+        .second-box{
+            flex-direction: column;
+        }
+        .reason-list{
+            align-items: center;
+        }
+       
+}
+

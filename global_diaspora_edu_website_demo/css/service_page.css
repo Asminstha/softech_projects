@@ -1,0 +1,94 @@
+
+.services-page{
+    font-size: 1.2rem;
+}
+.services-sub-heading{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #0f2caa;
+}
+.services-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+        /* background-image: url(./Images/bg/pngegg.png), linear-gradient(110deg, #fe0000, #0f2caa); */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
+}
+.services-row-first-col{
+flex-basis: 60%;
+padding: 20px;
+text-align: justify;
+
+}
+.services-row-second-col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    gap: 20px;
+    padding: 60px;
+}
+
+.services-row-second-col-img{
+    height: 350px;
+    border-radius: 50%;
+border: 2px dotted #0f2caa;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in;
+/* outline: px solid #0009; */
+    outline-offset: 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.services-row-second-col-img:hover{
+    border: 2px solid #fe0000;
+        outline: 8px solid #0f2caa;
+        outline-offset: 5px;
+        border-radius: 50%;
+}
+.career_counselling{
+    background-image: url(../Images/Assets/businessman-showing-changes-report_1098-3504.jpg);
+}
+.course_uni{
+    background-image: url(../Images/bg/college.jpg);
+}
+
+
+.services-row-second-col-text p{
+border:2px solid #fe0000;
+color: #0f2caa;
+font-weight: bold;
+border-radius: 80px 5px;
+padding: 20px;
+transition: 0.5s ease-out;
+}
+
+.services-row-second-col-text p:hover{
+background-color: #fe0000;
+color: #fff;
+}
+.services-row-first-col ul li{
+    list-style: none;
+    font-weight: bold;
+    color: #0f2caa;
+    margin:10px auto;
+    text-align: left;
+}
+
+
+/* small screen  */
+@media only screen and (max-width: 1000px){
+
+.services-row{
+    flex-direction: column-reverse;
+}
+
+}
